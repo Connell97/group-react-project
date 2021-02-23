@@ -1,12 +1,12 @@
 import React from 'react';
 
-import "./Sidebar.css";
+import "./SidebarOption.css";
 
 
-const SidebarOption = ({ text, Icon }) => {
+const SidebarOption = ({ active,text, Icon }) => {
   return (
       
-    <div className="sidebar">
+    <div className="sidebarOption">
       <Icon/>
   <h2>{text}</h2>
      

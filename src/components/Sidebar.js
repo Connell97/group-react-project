@@ -7,22 +7,22 @@ import ExploreIcon from '@material-ui/icons/Explore';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
-import ListIcon from '@material-ui/icons/List';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import MoreIcon from '@material-ui/icons/More';
+import ListAltIcon from '@material-ui/icons/ListAlt';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 const Sidebar = () => {
   return (
       
     <div className="sidebar">
         <TwitterIcon/>
-        <SidebarOption Icon={HomeIcon}  text="Home" />
+        <SidebarOption active Icon={HomeIcon}  text="Home" />
         <SidebarOption Icon={ExploreIcon} text="Explore" />
         <SidebarOption Icon={NotificationsNoneIcon}text="Notification" />
         <SidebarOption Icon={MailOutlineIcon}text="Message" />
         <SidebarOption Icon={BookmarksIcon}text="BookMarks" />
-        <SidebarOption Icon={ListIcon}text="List" />
-        <SidebarOption Icon={AccountCircleIcon}text="Profile" />
-        <SidebarOption Icon={MoreIcon}text="More" />
+        <SidebarOption Icon={ListAltIcon}text="List" />
+        <SidebarOption Icon={PermIdentityIcon}text="Profile" />
+        <SidebarOption Icon={MoreHorizIcon}text="More" />
        
 
     </div>
