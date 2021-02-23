@@ -6,7 +6,7 @@ import "./SidebarOption.css";
 const SidebarOption = ({ active,text, Icon }) => {
   return (
       
-    <div className="sidebarOption">
+    <div className = "sidebarOption">
       <Icon/>
   <h2>{text}</h2>
      
