@@ -1,0 +1,10 @@
+.action-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.action-bar img {
+    width: 20%;
+    filter: grayscale();
+}
