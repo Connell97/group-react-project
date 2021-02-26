@@ -1,0 +1,27 @@
+.profile-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic {
+    overflow: hidden;
+    width: 50%;
+}
+
+.profile-pic:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.profile-pic span {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-bar p {
+    grid-column-start: 2;
+}
