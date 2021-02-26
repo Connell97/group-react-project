@@ -1,7 +1,5 @@
 import './ProfileBar.css';
 
-
-
 const ProfileBar = (props) => {
     return (
         <div className = "profile-bar">
