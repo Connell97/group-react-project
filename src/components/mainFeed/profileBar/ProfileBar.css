@@ -1,27 +1,25 @@
 .profile-bar {
-    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.profile-pic {
-    overflow: hidden;
-    width: 50%;
+.profile-info {
+    display: flex;
+    justify-content: space-between;
 }
 
-.profile-pic:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+.profile-name {
+    font-weight: bold;
 }
 
-.profile-pic span {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.handle {
+    margin-left: 7px;
 }
 
-.profile-bar p {
-    grid-column-start: 2;
+.dot {
+    margin: 0 7px;
+}
+
+.handle, .dot, .timestamp {
+    color: rgb(147,161,173);
 }

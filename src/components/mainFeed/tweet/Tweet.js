@@ -1,3 +1,4 @@
+import './Tweet.css';
 import ActionBar from '../actionBar/ActionBar';
 import TweetContent from '../tweetContent/TweetContent';
 import ProfileBar from '../profileBar/ProfileBar';
@@ -5,9 +6,14 @@ import ProfileBar from '../profileBar/ProfileBar';
 const Tweet = (props) => {
     return(
         <div className = "tweet">
-            <ProfileBar profileInfo = {props.profileInfo}/>
-            <TweetContent content = "here is some content. Enjoy."/>
-            <ActionBar/>
+            <div className = "pic-col">
+                <div className = "profile-pic" style = {{backgroundImage: `url(${props.profileInfo.profilePic})`}}></div>
+            </div>
+            <div className = "info-container">
+                <ProfileBar profileInfo = {props.profileInfo}/>
+                <TweetContent content = "here is some content. Enjoy."/>
+                <ActionBar/>
+            </div>
         </div>
     )
 }

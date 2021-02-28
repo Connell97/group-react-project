@@ -1,5 +1,28 @@
 .tweet {
-    width: 100%;
-    display: grid;
-    grid-template-columns: [pic-col] 1fr [info-col] 4fr;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(223, 223, 223);
+    padding: 15px;
+    transition: all 0.2s;
+}
+
+.tweet:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.pic-col {
+    margin-right: 7px;
+}
+
+.info-container {
+    flex-basis: 100%;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
