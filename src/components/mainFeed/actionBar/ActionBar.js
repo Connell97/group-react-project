@@ -7,10 +7,18 @@ import ShareRoundedIcon from '@material-ui/icons/ShareRounded';
 const ActionBar = () => {
     return (
         <div className = "action-bar">
-            <ChatBubbleOutlineRoundedIcon/>
-            <RepeatRoundedIcon/>
-            <FavoriteBorderRoundedIcon/>
-            <ShareRoundedIcon/>
+            <div className = "comment-button">
+                <ChatBubbleOutlineRoundedIcon color="disabled"/>
+            </div>
+            <div className = "retweet-button">
+                <RepeatRoundedIcon color="disabled"/>
+            </div>
+            <div className = "like-button">
+                <FavoriteBorderRoundedIcon color="disabled"/>
+            </div>
+            <div className = "share-button">
+                <ShareRoundedIcon color="disabled"/>
+            </div>
         </div>
     )
 }
