@@ -1,18 +1,15 @@
 import './ProfileBar.css';
-import CheckIcon from '@material-ui/icons/Check';
 
 const ProfileBar = (props) => {
-    // const chkVer = () => {if (props.profileInfo.verified == true) {
-    //     return (
-    //         <CheckIcon/>
-    //     )
-    // }}
+    const chkVerif = props.profileInfo.verified;
     return (
         <div className = "profile-bar">
             <div className = "profile-info">
                 <div className = "profile-name">{props.profileInfo.profileName}</div>
                 <div className = "verified">
-                    <CheckIcon style={{ color: `rgb(83,165,228)` }} />
+                    {chkVerif === true &&
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png" alt="verified badge"/>
+                    }
                 </div>
                 <div className = "handle">@{props.profileInfo.handle}</div>
                 <div className = "dot">·</div>

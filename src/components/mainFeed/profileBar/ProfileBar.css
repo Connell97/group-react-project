@@ -23,3 +23,9 @@
 .handle, .dot, .timestamp {
     color: rgb(147,161,173);
 }
+
+.verified img {
+    width: 17px;
+    transform: translateY(3px);
+    margin-left: 7px;
+}

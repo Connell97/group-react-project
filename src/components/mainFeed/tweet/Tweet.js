@@ -11,7 +11,7 @@ const Tweet = (props) => {
             </div>
             <div className = "info-container">
                 <ProfileBar profileInfo = {props.profileInfo}/>
-                <TweetContent content = "here is some content. Enjoy."/>
+                <TweetContent content = {props.profileInfo.content} imgContent = {props.profileInfo.imgContent}/>
                 <ActionBar/>
             </div>
         </div>
