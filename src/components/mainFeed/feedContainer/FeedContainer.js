@@ -1,5 +1,6 @@
 import './FeedContainer.css';
 import Tweet from '../tweet/Tweet';
+import NewTweet from '../newTweet/NewTweet';
 
 //Add code to create new tweet
 
@@ -29,14 +30,17 @@ let profiles = [
     content: "wow so many fakes on here"},
 ]
 
-
+// const newTweet = [...profiles, newProfile];
 
 const FeedContainer = (props) => {
+
     const tweets = profiles.map((profile, index) => {
         return <Tweet profileInfo = {profile} key = {index}/>
     })
     return(
+        // <button onClick = {newTweet}>Create Tweet</button>
         <div className = "feed-container">
+            <NewTweet profilePic = "https://kevsbest.com/wp-content/uploads/2020/02/donald-trump-tan-line.png"/>
             {tweets}
         </div>
     )

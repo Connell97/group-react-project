@@ -1,0 +1,45 @@
+.new-tweet-form {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-bottom: 1px solid rgb(223, 223, 223);;
+    margin-bottom: 10px;
+}
+.input-content {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-content textarea{
+    font-family: sans-serif;
+    max-height: 20px;
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    font-size: 0.8vmax;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.tweet-options {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tweet-button {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    width: 80px;
+    align-self: flex-end;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(142,208,248);
+    outline: none;
+    cursor: pointer;
+}
