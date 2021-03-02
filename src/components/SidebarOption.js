@@ -16,3 +16,5 @@ const SidebarOption = ({ active,text, Icon }) => {
   );
 }
 export default SidebarOption;
+
+//I learned it from clever Programmer.
